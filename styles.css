@@ -7,13 +7,13 @@ body, h1, h2, p, ul, li {
 /* Basic styling */
 body {
     font-family: 'YourTechyFont', Arial, sans-serif;
-    background-color: #000;
-    color: #9900cc; /* White-purple */
+    background-color: transparent; /* Transparent background */
+    color: #000; /* Black font color */
 }
 
 header {
     background-color: black;
-    color: #9900cc;
+    color: #9900cc; /* White-purple */
     text-align: center;
     padding: 20px;
 }
@@ -26,28 +26,35 @@ nav ul {
 
 nav ul li {
     float: left;
+    margin-right: 20px; /* Increased spacing between navigation items */
 }
 
 nav ul li a {
     display: block;
     color: #9900cc;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
 main {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 40px auto; /* Increased spacing between sections */
     padding: 20px;
-    background-color: black;
-    color: #9900cc;
+    background-color: transparent;
+    color: #000; /* Black font color */
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: black;
-    color: #9900cc
+    padding: 20px; /* Increased footer padding */
+    background-color: transparent; /* Transparent background */
+    color: #000; /* Black font color */
+}
+
+.logo img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+}
