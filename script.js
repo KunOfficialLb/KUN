@@ -1,9 +1,10 @@
-// JavaScript code for interactive neon background
-const body = document.body;
+// JavaScript code for interactive background
+const neonBackground = document.querySelector('.neon-background');
 
-body.addEventListener('mousemove', (e) => {
+document.addEventListener('mousemove', (e) => {
     const mouseX = e.clientX / window.innerWidth;
     const mouseY = e.clientY / window.innerHeight;
 
-    body.style.background = `radial-gradient(circle at ${mouseX * 100}% ${mouseY * 100}%, #ff00ff, transparent)`;
+    // Adjust the background position based on mouse cursor
+    neonBackground.style.backgroundPosition = `${mouseX * 200}% ${mouseY * 200}%`;
 });
