@@ -7,54 +7,59 @@ body, h1, h2, p, ul, li {
 /* Basic styling */
 body {
     font-family: Arial, sans-serif;
-    background: transparent; /* Transparent background */
-    color: #000; /* Black font color */
+    background: transparent;
+    color: #000;
+    overflow: hidden;
+    margin: 0;
+}
+
+.neon-container {
+    position: relative;
 }
 
 header {
     background-color: black;
-    color: #9900cc; /* White-purple */
-    text-align: center;
-    padding: 20px;
-}
-
-nav ul {
-    list-style-type: none;
-    background-color: black;
-    overflow: hidden;
-}
-
-nav ul li {
-    float: left;
-    margin-right: 20px; /* Increased spacing between navigation items */
-}
-
-nav ul li a {
-    display: block;
     color: #9900cc;
     text-align: center;
-    text-decoration: none;
+    padding: 20px;
 }
 
 main {
     max-width: 800px;
-    margin: 40px auto; /* Increased spacing between sections */
+    margin: 40px auto;
     padding: 20px;
-    background: transparent; /* Transparent background */
-    color: #000; /* Black font color */
+    background: transparent;
+    color: #000;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
     text-align: center;
-    padding: 20px; /* Increased footer padding */
-    background: transparent; /* Transparent background */
-    color: #000; /* Black font color */
+    padding: 20px;
+    background: transparent;
+    color: #000;
 }
 
-.logo img {
-    max-width: 100px;
-    display: block;
-    margin: 0 auto;
+/* Neon Background */
+.neon-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background: radial-gradient(circle, #ff00ff, #00ffff, #ff00ff, #00ffff);
+    background-size: 200% 200%;
+    animation: gradient 5s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 200% 200%;
+    }
 }
