@@ -77,6 +77,45 @@ footer {
     animation: gradient 5s linear infinite;
 }
 
+/* Add this CSS to style the carousel */
+.instagram-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style arrows for navigation (optional) */
+.carousel-nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-nav button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
 @keyframes gradient {
     0% {
         background-position: 
