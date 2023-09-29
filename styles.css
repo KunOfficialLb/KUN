@@ -116,6 +116,18 @@ footer {
     cursor: pointer;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 
+/* Ripple Effect */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    transform: scale(0);
+    animation: ripple 0.5s linear;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
